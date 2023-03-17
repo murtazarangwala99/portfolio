@@ -18,7 +18,3 @@
 ## Live Link of the Project:
 
 [Live Project Link](https://murtuzarangwala.netlify.app/)
-
-## Output:
-
-![Wireless Headphone](./thumbnail.PNG)

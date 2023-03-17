@@ -20,7 +20,7 @@ nav{
     margin-top: 1rem;
 }
 .nav-right{
-    /* text-align: center */
+    text-align: center
 }
 .list-items{
     display: flex;
@@ -46,9 +46,11 @@ nav{
     display: flex;
     gap: 10%;
     margin: 3rem 3rem;
+    
 }
 .introduction-left{
-    margin: 2rem ;
+    margin: 2rem;
+    width: 70%;
 }
 .introduction-left h1{
     font-size: 4rem;
@@ -74,7 +76,7 @@ nav{
     width: 50px;
 }
 /* Projects CSS */
-#projects{
+.projects{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 3rem;
@@ -83,6 +85,11 @@ nav{
     font-size: 2.3rem;
     text-align: center;
     margin: 9rem 3rem 0;
+}
+.project-sub-heading{
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 1rem 0 0 3rem;
 }
 .project-card{
     margin: 1rem 1rem 1rem 0;
