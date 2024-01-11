@@ -4,401 +4,611 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
     <meta
       name="description"
-      content="This Webpage is personal Portfolio Website for Murtuza Rangwala"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+      content="This Webpage is personal Portfolio Website for Murtuza Rangwala" />
+    <link rel="stylesheet" href="/main.css" />
     <title>Murtuza Rangwala</title>
   </head>
-  <body>
-    <div id="main">
-      <!-- Navbar Starts Here -->
-      <nav>
-        <div class="img-left">
-          <a href="#">
-            <img src="./assets/logo.png" alt="logo" />
-          </a>
-        </div>
-        <div class="nav-right">
-          <ul class="list-items">
-            <li class="list-item">
-              <a href="#">Home</a>
-            </li>
-            <li class="list-item">
-              <a href="#project-heading">Projects</a>
-            </li>
-            <li class="list-item">
-              <a href="#contact-heading">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Introduction Section -->
-      <div class="introduction">
-        <div class="introduction-left">
-          <h1>Murtuza Rangwala</h1>
-          <h2>A Web Developer</h2>
-          <p>
-            Hello there, I am <strong>Murtuza Rangwala</strong>, a 23 year old
-            Web Developer Lived in Vansda, town in Gujarat. I am having good
-            amout of Knowledge in HTML,CSS and JavaScript and i am continuously
-            learning new skills.
-          </p>
-          <div class="introduction-skill">
-            <img src="./assets/html.png" alt="html" />
-            <img src="./assets/css.png" alt="css" />
-            <img src="./assets/tailwind-css.png" alt="tailwind-css" />
-            <img src="./assets/javascript.png" alt="js" />
-            <img src="./assets/mongodb.png" alt="mongo-db" />
-            <img src="./assets/expressjs.png" alt="express-js" />
-            <img src="./assets/reactJs.png" alt="react-js" />
-            <img src="./assets/nodeJs.png" alt="node-js" />
-          </div>
-        </div>
-        <!-- <div class="introduction-right">
-          <img src="./assets/image.png" alt="introduction" />
-        </div> -->
+  <body class="font-[Montserrat] m-2 sm:m-6">
+    <!-- Header Starts here....  -->
+    <header
+      class="flex border-2 py-2 rounded-sm justify-around sm:justify-between items-center">
+      <div>
+        <a href="#">
+          <img
+            src="./assets/logo.png"
+            alt="logo"
+            class="w-[60px] sm:w-[100px] hover:cursor-pointer" />
+        </a>
       </div>
-      <!-- Projects Section -->
-      <div id="project-heading">
-        <h1>Projects</h1>
+      <div
+        class="flex flex-wrap items-center list-none gap-3 font-bold sm:gap-4 sm:mx-8 md:gap-8 lg:mx-16 lg:gap-12">
+        <a href="#">
+          <li
+            class="hover:underline text-center border-none rounded-lg hover:cursor-pointer p-2 md:px-3 md:py-2 hover:border-2 hover:bg-blue-500 hover:text-white sm:text-xl">
+            Home
+          </li>
+        </a>
+        <a href="#Project-Heading">
+          <li
+            class="hover:underline text-center border-none rounded-lg hover:cursor-pointer p-2 md:px-3 md:py-2 hover:border-2 hover:bg-blue-500 hover:text-white sm:text-xl">
+            Project
+          </li>
+        </a>
+        <a href="#Contact-Section">
+          <li
+            class="hover:underline text-center border-none rounded-lg hover:cursor-pointer p-2 md:px-3 md:py-2 hover:border-2 hover:bg-blue-500 hover:text-white sm:text-xl">
+            Contact
+          </li>
+        </a>
       </div>
-      <div class="project-sub-heading">
-        <span> <strong> =></strong> HTML CSS and Taiwind Projects </span>
+      <!-- <a href="#" class="block sm:hidden mx-4">&#8801;</a> -->
+    </header>
+    <!-- Header Ends Here.... -->
+    <!-- Main/ Introduction Section Starts here.... -->
+    <main
+      class="flex h-full flex-col my-7 md:my-14 w-11/12 xl:w-8/12 mx-auto gap-2 justify-center items-center">
+      <h1 class="font-extrabold text-2xl md:text-5xl">Murtuza Rangwala</h1>
+      <h2 class="font-bold text-xl md:text-3xl">A Web Developer</h2>
+      <div class="flex flex-col gap-2 my-2">
+        <p class="text-wrap text-left md:text-xl">
+          Hello! 👋 I'm a Front-End Web Developer. I love solving problems and am always
+          learning new things. I'm quick to adapt to changes and enjoy using and learning the
+          latest technologies to create awesome websites.
+        </p>
+
+        <p class="text-wrap text-left md:text-xl">
+          I pay a lot of attention to making websites look and work great. I love to build
+          interactive and dynamic parts of websites using HTML, CSS, Tailwind, JavaScript and
+          ReactJs.
+        </p>
+        <p class="text-wrap text-left md:text-xl">
+          I'm good at fixing issues and making the development process smooth and efficient.
+        </p>
       </div>
-      <div class="projects">
-        <!-- Project 1  -->
-        <div class="project-card">
-          <h4>Trend in 2025?</h4>
-          <img src="./assets/1.png" alt="project-1" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/Trend2025"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://trendin2025.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 2  -->
-        <div class="project-card">
-          <h4>Restaurant Site</h4>
-          <img src="./assets/2.png" alt="project-2" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/restaurant-site"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mkr-restaurant.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 3  -->
-        <div class="project-card">
-          <h4>Court Justice</h4>
-          <img src="./assets/3.png" alt="project-3" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/court-justice"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://court-justice.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 4  -->
-        <div class="project-card">
-          <h4>No Competition</h4>
-          <img src="./assets/4.png" alt="project-4" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/no-competition"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://no-competition.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 5  -->
-        <div class="project-card">
-          <h4>Cyptocurrency</h4>
-          <img src="./assets/5.png" alt="project-5" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/dao-crypto"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://dao-crypto.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 6  -->
-        <div class="project-card">
-          <h4>Monstera</h4>
-          <img src="./assets/6.png" alt="project-6" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/Monstera"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-monstera.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 7  -->
-        <div class="project-card">
-          <h4>Headphone Sell</h4>
-          <img src="./assets/7.png" alt="project-7" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/headphone-sell"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://headphone-sell.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 8  -->
-        <div class="project-card">
-          <h4>Web Design</h4>
-          <img src="./assets/8.png" alt="project-8" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/design-landing"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://web-design-landing.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 9  -->
-        <div class="project-card">
-          <h4>API Site</h4>
-          <img src="./assets/9.png" alt="project-9" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/api-site"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-api-site.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 10  -->
-        <div class="project-card">
-          <h4>Interior Design</h4>
-          <img src="./assets/10.PNG" alt="project-10" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/interior-design"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-interior-design.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 11  -->
-        <div class="project-card">
-          <h4>Hosting Site</h4>
-          <img src="./assets/11.png" alt="project-11" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/hosting-site"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-hosting.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 12  -->
-        <div class="project-card">
-          <h4>Business Solution</h4>
-          <img src="./assets/12.png" alt="project-12" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/business-solution"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://business-solution.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 13  -->
-        <div class="project-card">
-          <h4>SAAS Landing Page</h4>
-          <img src="./assets/13.png" alt="project-13" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/saas-landing-page"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-saas.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 14  -->
-        <div class="project-card">
-          <h4>Dance | Creativity</h4>
-          <img src="./assets/14.png" alt="project-14" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/dance-creativity"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-dance-creativity.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 15  -->
-        <div class="project-card">
-          <h4>Visual Designer</h4>
-          <img src="./assets/15.png" alt="project-15" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/visual-designer"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-visual-designer.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 16 || Taiwind Project - 1 -->
-        <div class="project-card">
-          <h4>Paytm Clone</h4>
-          <img src="./assets/16.png" alt="project-16" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/paytm-clone"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-paytm.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 17 || Taiwind Project - 2 -->
-        <div class="project-card">
-          <h4>Paytm Clone</h4>
-          <img src="./assets/17.png" alt="project-17" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/shopify-clone"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-shopify.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
-        <!-- Project 18 || Taiwind Project - 3 -->
-        <div class="project-card">
-          <h4>Paytm Clone</h4>
-          <img src="./assets/18.png" alt="project-18" />
-          <div class="project-button">
-            <a
-              href="https://github.com/murtazarangwala99/rode-clone"
-              target="_blank"
-              >Code</a
-            >
-            <a href="https://mk-rode.netlify.app/" target="_blank"
-              >Live Project</a
-            >
-          </div>
-        </div>
+      <div class="flex flex-wrap gap-4 mt-3">
+        <img src="./assets/html.png" alt="HTML" />
+        <img src="./assets/css.png" alt="CSS" />
+        <img src="./assets/tailwind-css.png" alt="tailwind-css" />
+        <img src="./assets/javascript.png" alt="JavaScript" />
+        <img src="./assets/reactJs.png" alt="ReactJs" />
+        <img src="./assets/mongodb.png" alt="mongodb" />
+        <img src="./assets/expressjs.png" alt="expressjs" />
+        <img src="./assets/nodeJs.png" alt="nodeJs" />
       </div>
-      <!-- MERN PROJECT HEADING -->
-      <div class="project-sub-heading">
-        <span><strong> =></strong> MERN Project</span>
-      </div>
-      <!-- MERN PROJECTS -->
-      <div class="projects">
-        <!-- TODO MERN -->
-        <div class="project-card">
-          <h4>Paytm Clone</h4>
-          <img src="./assets/todo-dashboard.PNG" alt="project-19" />
-          <div class="project-button">
-            <a href="https://github.com/murtazarangwala99/ToDo" target="_blank"
-              >Code</a
-            >
-            <a href="https://github.com/murtazarangwala99/ToDo" target="_blank"
-              >Live Project</a
-            >
+    </main>
+    <!-- Main/ Introduction Section Ends here.... -->
+    <!-- Projects Sections  Starts here.... -->
+    <div class="flex flex-col mx-8" id="Project-Heading">
+      <h2 class="hover:underline text-center font-extrabold text-2xl md:text-5xl">Projects</h2>
+      <h2 class="font-medium text-lg text-center sm:text-left md:text-2xl mb-4">
+        ▶ <span class="hover:underline"> HTML & CSS Static Pages </span>
+      </h2>
+
+      <!-- Card Container Starts here.... -->
+      <!-- HTML & CSS Projects.... -->
+      <div class="flex justify-center flex-wrap items-center bg-slate-50">
+        <!-- Card Design  -->
+        <!-- Card 1 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/1.png" alt="Project-1" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Trend in 2025?</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/Trend2025"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://trendin2025.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Contact Section -->
-      <div id="contact-heading">
-        <h1>Contact</h1>
-      </div>
-      <div class="contact">
-        <div class="contact-left-card">
-          <img src="./assets/work.png" alt="contact" />
-          <h4>Murtuza Rangwala</h4>
-          <p>Web Developer</p>
+        <!-- Card 2 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/2.png" alt="Project-2" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Restaurant Site</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/restaurant-site"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mkr-restaurant.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="contact-right">
-          <h2>Available for Work</h2>
-          <h3>Get in Touch</h3>
-          <a href="https://github.com/murtazarangwala99"
-            ><img src="./assets/github.png" alt="github"
-          /></a>
-          <a href="https://www.facebook.com/murtazarangwala95" target="_blank"
-            ><img src="./assets/facebook.png" alt="facebook"
-          /></a>
-          <a href="https://twitter.com/mkaizar95"
-            ><img src="./assets/twitter.png" alt="twitter" target="_blank"
-          /></a>
-          <a href="https://www.linkedin.com/in/imurtuza99/"
-            ><img src="./assets/linkedin.png" alt="linkedin" target="_blank"
-          /></a>
-          <a href="https://www.instagram.com/murtuza_it/"
-            ><img src="./assets/instagram.png" alt="instagram" target="_blank"
-          /></a>
-          <a href="mailto:murtazarangwala95@gmail.com"
-            ><img src="./assets/gmail.png" alt="gmail" target="_blank"
-          /></a>
+        <!-- Card 3 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/3.png" alt="Project-3" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Court Justice</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/court-justice"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://court-justice.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/4.png" alt="Project-4" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">No Competition</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/no-competition"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://no-competition.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/5.png" alt="Project-5" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Cyptocurrency</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/dao-crypto"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://dao-crypto.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/6.png" alt="Project-6" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Monstera</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/Monstera"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-monstera.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/7.png" alt="Project-7" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Headphone Sell</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/headphone-sell"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://headphone-sell.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/8.png" alt="Project-8" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Web Design</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/design-landing"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://web-design-landing.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/9.png" alt="Project-9" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">API Site</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/api-site"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-api-site.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 10 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/10.png" alt="Project-10" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Interior Design</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/interior-design"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-interior-design.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 11 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/11.png" alt="Project-11" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Hosting Site</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/hosting-site"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-hosting.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 12 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/12.png" alt="Project-12" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Business Solution</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/business-solution"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://business-solution.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 13 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/13.png" alt="Project-13" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">SAAS Landing Page</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/saas-landing-page"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-saas.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 14 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/14.png" alt="Project-14" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Dance | Creativity</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/dance-creativity"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-dance-creativity.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 15 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/15.png" alt="Project-15" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Visual Designer</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/visual-designer"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-visual-designer.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Footer Section -->
-      <footer>
-        <a href="#">
-          <img src="./assets/logo.png" alt="logo" />
-        </a>
-      </footer>
+      <!-- Taiwind Projects.... -->
+      <h2 class="font-medium text-lg text-center sm:text-left md:text-2xl mb-4">
+        ▶ <span class="hover:underline"> Tailwind Static Pages | Statics Clone Websites </span>
+      </h2>
+      <div class="flex justify-center flex-wrap items-center bg-slate-50">
+        <!-- Card 1  -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/16.png" alt="Project-16" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Paytm Clone</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/paytm-clone"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-paytm.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 2  -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/17.png" alt="Project-17" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Shopify Clone</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/shopify-clone"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-shopify.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img class="w-[300px] h-[200px] rounded-lg" src="./assets/18.png" alt="Project-18" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Rode Clone</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/rode-clone"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://mk-rode.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- React and MERN Projects.... -->
+      <h2 class="font-medium text-lg text-center sm:text-left md:text-2xl mb-4">
+        ▶ <span class="hover:underline"> React and MERN Projects </span>
+      </h2>
+      <div class="flex justify-center flex-wrap items-center bg-slate-50">
+        <!-- Card 1 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img
+            class="w-[300px] h-[200px] rounded-lg"
+            src="./assets/todo-dashboard.PNG"
+            alt="Project-19(todo-dashboard)" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">ToDo MERN</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/ToDo"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://github.com/murtazarangwala99/ToDo"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="flex p-2 m-2 flex-col border-2 border-transparent justify-between rounded-lg hover:bg-blue-100 hover:shadow-2xl">
+          <img
+            class="w-[300px] h-[200px] rounded-lg"
+            src="./assets/tasty-zoom.PNG"
+            alt="Project-20(Tasty-zoom)" />
+          <div class="flex flex-col text-center justify-center items-center">
+            <h3 class="text-left font-semibold">Tasty-Zoom Restaurant(ReactJs)</h3>
+            <div class="flex gap-6">
+              <a
+                href="https://github.com/murtazarangwala99/Tasty-Zoom-Restaurant/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Code</a
+              >
+              <a
+                href="https://tasty-zoom.netlify.app/"
+                class="font-medium px-3 py-2 rounded-lg text-white hover:shadow-lg hover:underline bg-blue-400"
+                target="_blank"
+                >Live</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Projects Sections  Ends here.... -->
+
+    <!-- Contact Section Starts here.... -->
+    <div class="my-7" id="Contact-Section">
+      <h2 class="hover:underline text-center font-extrabold mb-4 text-2xl md:text-5xl">
+        Contact
+      </h2>
+      <div class="flex flex-col md:flex-row">
+        <div class="mx-auto">
+          <img
+            class="md:w-[250px] lg:w-[400px] hidden md:block"
+            src="./assets/work.png"
+            alt="work-together" />
+        </div>
+        <div class="mx-auto text-center flex flex-col items-center justify-center">
+          <h3 class="font-bold">Available for Work</h3>
+          <p class="font-semibold">Get in Touch</p>
+          <div class="flex mt-4 flex-wrap gap-4">
+            <a href="https://github.com/murtazarangwala99">
+              <img class="w-[48px]" src="./assets/github.png" alt="github" />
+            </a>
+            <a href="https://twitter.com/mkaizar95">
+              <img class="w-[48px]" src="./assets/twitter.png" alt="twitter" />
+            </a>
+            <a href="https://www.linkedin.com/in/imurtuza99/">
+              <img class="w-[48px]" src="./assets/linkedin.png" alt="linkdin" />
+            </a>
+            <a href="https://www.instagram.com/murtuza_it/">
+              <img class="w-[48px]" src="./assets/instagram.png" alt="instagram" />
+            </a>
+            <a href="mailto:murtazarangwala95@gmail.com">
+              <img class="w-[48px]" src="./assets/gmail.png" alt="gmail" />
+            </a>
+            <a href="https://hashnode.com/@murtuza99">
+              <img class="w-[36px] mt-1" src="./assets/hashnode.png" alt="hashnode" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section Ends here.... -->
+
+    <!-- Footer Starts here.... -->
+    <footer class="flex items-center justify-center">
+      <a href="#">
+        <img
+          class="w-[60px] sm:w-[100px] hover:cursor-pointer"
+          src="./assets/logo.png"
+          alt="logo-footer" />
+      </a>
+    </footer>
+    <!-- Footer Ends here.... -->
   </body>
 </html>
